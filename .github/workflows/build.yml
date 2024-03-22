@@ -38,7 +38,7 @@ jobs:
 
       - name: Build geoip files
         run: |
-          curl -L https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
+          curl -sSL https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
           go run ./
 
  
