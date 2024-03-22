@@ -39,7 +39,7 @@ jobs:
       - name: Build geoip files
         run: |
           curl -L https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat -o ./geoip.dat
-          go run ./   
+          go run ./
 
  
       - name: Move files to publish directory
