@@ -5,7 +5,8 @@
          "action": "add",
          "args": {
             "uri": "./geoip.dat",
-            "onlyIPType": "ipv4"
+            "onlyIPType": "ipv4",
+            "wantedList": ["cn"]
          }
       }
    ],
