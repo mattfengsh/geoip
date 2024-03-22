@@ -33,14 +33,12 @@ jobs:
           echo "RELEASE_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
         shell: bash
 
-      - name: Fetch lists from ripe.net
-        run: |
-          chmod +x asn.sh
-          ./asn.sh
+
 
 
       - name: Build geoip files
         run: |
+          curl -L https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
           go run ./
 
  
