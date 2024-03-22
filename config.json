@@ -15,7 +15,7 @@
          "type": "text",
          "action": "output",
          "args": {
-            "outputDir": "./"
+            "outputDir": "./tmp/"
          }
       }
    ]
